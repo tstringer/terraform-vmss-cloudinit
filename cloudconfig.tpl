@@ -1,8 +1,3 @@
-packages:
- - httpd
- - samba-client
- - samba-common
- - cifs-utils
-package_upgrade: true
-bootcmd:
- - echo test | sudo dd of=/etc/testfile &> /dev/null
+#cloud-config
+runcmd:
+    - echo hello world > /tmp/cloud-init-test.txt
